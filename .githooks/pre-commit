@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Runs the automated quality gate before every commit. Enable with:
+#   git config core.hooksPath .githooks
+exec "$(git rev-parse --show-toplevel)/scripts/quality-gate.sh"
